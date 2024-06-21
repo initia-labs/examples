@@ -1,0 +1,57 @@
+{
+  "l1_config": {
+    "chain_id": "initiation-1",
+    "rpc_url": "https://rpc-initia.01node.com:443",
+    "gas_prices": "0.15move/944f8dd8dc49f96c25fea9849f16436dcfa6d564eec802f3ef7f8b3ea85368ff"
+  },
+  "l2_config": {
+    "chain_id": "minitia-1",
+    "denom": "umin",
+    "moniker": "operator"
+  },
+  "op_bridge": {
+    "output_submission_start_time": "2024-06-18T13:44:15.113678+07:00",
+    "output_submission_interval": 3600000000000,
+    "output_finalization_period": 3600000000000,
+    "batch_submission_target": "l1"
+  },
+  "system_keys": {
+    "validator": {
+      "address": "init14uqhj002jjeznenuwju4eeacaelzwnqxpw9y93",
+      "mnemonic": "promote logic viable power grain fortune attack smart oxygen theme swarm utility advice chapter happy want current lamp salon fade afraid truth find side"
+    },
+    "bridge_executor": {
+      "address": "init1egqfcrmkearyxy9xzjt6sdjjxdlgmkp9rhwhe3",
+      "mnemonic": "grab soft boat vehicle supply damage gallery forget unfold elite radio atom involve hurt math crime badge toast bulb brief future salt thrive snake"
+    },
+    "output_submitter": {
+      "address": "init1qj6a7s72adpsgks6l4eaannxu2vzsy0cfx9w9q",
+      "mnemonic": "table cage bridge blade actor wet symbol kangaroo toddler indicate hope bus wise early vital matter run session float antique moment soft help drip"
+    },
+    "batch_submitter": {
+      "address": "init1ch8rjnw88vxus9je85wzfvelf287pucngww7jn",
+      "mnemonic": "chunk front subject language range foot draw answer field text high razor blossom million rice arrive announce angry erupt hair leopard tiger neck method"
+    },
+    "challenger": {
+      "address": "init1jzknk7q6zzx4wn6xrhpraxhe7w35p5z3q9s645",
+      "mnemonic": "body found isolate gap lawn disagree link region tube empower just flee life electric guard flock exit mandate stool shoot talk black quote situate"
+    }
+  },
+  "genesis_accounts": [
+    {
+      "address": "init14uqhj002jjeznenuwju4eeacaelzwnqxpw9y93"
+    },
+    {
+      "address": "init1egqfcrmkearyxy9xzjt6sdjjxdlgmkp9rhwhe3"
+    },
+    {
+      "address": "init1qj6a7s72adpsgks6l4eaannxu2vzsy0cfx9w9q"
+    },
+    {
+      "address": "init1ch8rjnw88vxus9je85wzfvelf287pucngww7jn"
+    },
+    {
+      "address": "init1jzknk7q6zzx4wn6xrhpraxhe7w35p5z3q9s645"
+    }
+  ]
+}
