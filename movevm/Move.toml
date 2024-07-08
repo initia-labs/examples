@@ -1,0 +1,9 @@
+[package]
+name = "movevm"
+version = "0.0.0"
+
+[dependencies]
+InitiaStdlib = { git = "https://github.com/initia-labs/movevm.git", subdir = "precompile/modules/initia_stdlib", rev = "main" }
+
+[addresses]
+example =  "0x6a76da75b3246fe0cb96bac5c3f260d6199bceae"
