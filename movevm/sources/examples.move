@@ -1,4 +1,4 @@
-module example::oracle_example {
+module example::examples {
     use std::string::String;
     use initia_std::oracle::get_price;
 
