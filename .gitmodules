@@ -7,3 +7,6 @@
 [submodule "evm/slinky-price-oracle/lib/forge-std"]
 	path = evm/slinky-price-oracle/lib/forge-std
 	url = https://github.com/foundry-rs/forge-std
+[submodule "evm/slinky-price-oracle/lib/evm-contracts"]
+	path = evm/slinky-price-oracle/lib/evm-contracts
+	url = https://github.com/initia-labs/evm-contracts
