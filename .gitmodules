@@ -25,3 +25,6 @@
 [submodule "evm/slinky-oracle/lib/forge-std"]
 	path = evm/slinky-oracle/lib/forge-std
 	url = https://github.com/foundry-rs/forge-std
+[submodule "evm/slinky-oracle/lib/initia-evm-contracts"]
+	path = evm/slinky-oracle/lib/initia-evm-contracts
+	url = https://github.com/initia-labs/initia-evm-contracts
