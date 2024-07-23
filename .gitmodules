@@ -1,9 +1,6 @@
 [submodule "evm/initia-erc20/lib/forge-std"]
 	path = evm/initia-erc20/lib/forge-std
 	url = https://github.com/foundry-rs/forge-std
-[submodule "evm/initia-erc20/lib/evm-contracts"]
-	path = evm/initia-erc20/lib/evm-contracts
-	url = https://github.com/initia-labs/evm-contracts
 [submodule "evm/slinky-price-oracle/lib/forge-std"]
 	path = evm/slinky-price-oracle/lib/forge-std
 	url = https://github.com/foundry-rs/forge-std
