@@ -19,3 +19,6 @@
 [submodule "evm/initia-custom-erc20/lib/initia-evm-contracts"]
 	path = evm/initia-custom-erc20/lib/initia-evm-contracts
 	url = https://github.com/initia-labs/initia-evm-contracts
+[submodule "lib/initia-evm-contracts"]
+	path = lib/initia-evm-contracts
+	url = https://github.com/initia-labs/initia-evm-contracts
