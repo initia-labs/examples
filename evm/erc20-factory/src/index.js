@@ -1,7 +1,7 @@
 const { createPublicClient, createWalletClient, decodeEventLog, getContract, http } = require('viem');
 const { privateKeyToAccount } = require('viem/accounts');
-const erc20Abi = require('./erc20Abi.json');
-const erc20FactoryAbi = require('./erc20factoryabi.json');
+const erc20Abi = require('./abis/erc20Abi.json');
+const erc20FactoryAbi = require('./abis/erc20factoryabi.json');
 const miniEVM = require('./chain');
 
 const privateKey = '0x2278858f8769f3dc1eeaff80c2fb073f6a0a6739fb2a1a018e2570017ab89263';
@@ -26,6 +26,7 @@ const publicClient = createPublicClient({
 // Send the transaction
 async function createERC20() {
   try {
+    // call createERC20 function on the factory contract to create a new ERC20 token
     const hash = await client.writeContract({
       address: erc20FactoryAddress, // Factory address
       abi: erc20FactoryAbi,
@@ -33,25 +34,28 @@ async function createERC20() {
       args: ['Test', 'TST', 18],
     })
     console.log('Transaction sent. Hash:', hash);
+
+    // Wait for the transaction to be confirmed
+    await new Promise(resolve => setTimeout(resolve, 500));
+
+    // Get the transaction receipt and parse the logs for the ERC20Created event
     const receipt = await publicClient.getTransactionReceipt({
       hash: hash
     });
-    // Sleep for 2 seconds
-    await new Promise(resolve => setTimeout(resolve, 2000));
     const erc20CreatedLog = receipt.logs.find(log => 
       log.address.toLowerCase() === erc20FactoryAddress.toLowerCase() // Check if the log is from the factory address
     );
 
+    // Check if the ERC20Created event was found in the logs and decode the created ERC20 address
     if (erc20CreatedLog) {
       const decodedLog = decodeEventLog({
         abi: erc20FactoryAbi,
         data: erc20CreatedLog.data,
         topics: erc20CreatedLog.topics,
       });
-
       console.log('New ERC20 address:', decodedLog.args.erc20);
 
-      // Read the ERC20 contract
+      // Try reading the new ERC20 contract
       const erc20 = await getContract({
         address: decodedLog.args.erc20,
         abi: erc20Abi,
@@ -60,7 +64,6 @@ async function createERC20() {
           wallet: client
         }
       });
-
       console.log('ERC20 name:', await erc20.read.name());
       console.log('ERC20 symbol:', await erc20.read.symbol());
       console.log('ERC20 decimals:', await erc20.read.decimals());

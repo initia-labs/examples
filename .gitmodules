@@ -10,3 +10,9 @@
 [submodule "evm/slinky-price-oracle/lib/evm-contracts"]
 	path = evm/slinky-price-oracle/lib/evm-contracts
 	url = https://github.com/initia-labs/evm-contracts
+[submodule "evm/initia-erc20/lib/initia-evm-contracts"]
+	path = evm/initia-erc20/lib/initia-evm-contracts
+	url = https://github.com/initia-labs/initia-evm-contracts
+[submodule "evm/slinky-price-oracle/lib/initia-evm-contracts"]
+	path = evm/slinky-price-oracle/lib/initia-evm-contracts
+	url = https://github.com/initia-labs/initia-evm-contracts
