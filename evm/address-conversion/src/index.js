@@ -1,9 +1,9 @@
 const converter = require("bech32-converting")
 
-let bech32Address = "init1735qkcsrxa438ezvsnhj4csyrelrdr7a2xkxas";
+let bech32Address = "init1pyq6amga29zfsldw8k26kgvl7a0fhf3kftflmr";
 
 const hexAddress = converter('init').toHex(bech32Address)
-console.log(hexAddress) // 0xd6c82a78C3c898449A63c85fed7C4c6cDdb20CD5
+console.log(hexAddress) // 0x0901aeeD1d5144987DaE3D95AB219ff75e9bA636
 
 bech32Address = converter('init').toBech32(hexAddress)
-console.log(bech32Address) // init1735qkcsrxa438ezvsnhj4csyrelrdr7a2xkxas
+console.log(bech32Address) // init1pyq6amga29zfsldw8k26kgvl7a0fhf3kftflmr
