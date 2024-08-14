@@ -1,0 +1,33 @@
+# Move build artifacts
+build/
+target/
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Dependency directories
+node_modules/
+
+# Environment variables
+.env
+.env.*
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Move specific
+*.mvcov
+
+# Miscellaneous
+*.bak
