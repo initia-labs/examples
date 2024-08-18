@@ -1,7 +1,7 @@
 {
   "l1_config": {
     "chain_id": "stone-16",
-    "rpc_url": "https://rpc.stone-16.initia.xyz",
+    "rpc_url": "https://rpc.stone-16.initia.xyz:443",
     "gas_prices": "0.15uinit"
   },
   "l2_config": {
