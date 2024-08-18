@@ -1,6 +1,6 @@
 {
   "l1_config": {
-    "rpc_url": "https://rpc.stone-16.initia.xyz",
+    "rpc_url": "https://rpc.stone-16.initia.xyz:443",
     "gas_prices": "0.15uinit"
   }
 }
