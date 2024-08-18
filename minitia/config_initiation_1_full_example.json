@@ -13,7 +13,7 @@
     "output_submission_start_time": "2024-06-18T13:44:15.113678+07:00",
     "output_submission_interval": 3600000000000,
     "output_finalization_period": 3600000000000,
-    "batch_submission_target": "l1"
+    "batch_submission_target": "INITIA"
   },
   "system_keys": {
     "validator": {
