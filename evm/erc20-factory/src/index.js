@@ -4,7 +4,7 @@ const erc20Abi = require('./abis/erc20Abi.json');
 const erc20FactoryAbi = require('./abis/erc20factoryabi.json');
 const miniEVM = require('./chain');
 
-const privateKey = '0x2278858f8769f3dc1eeaff80c2fb073f6a0a6739fb2a1a018e2570017ab89263';
+const privateKey = process.env.PRIVATE_KEY;
 const erc20FactoryAddress = '0xd53506E20eA25122aC6adc6462D9D1cf810Ef5a4';
 
 // Create an account from the private key
