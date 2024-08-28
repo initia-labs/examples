@@ -1,5 +1,19 @@
 {
   "dependencies": {
     "viem": "^2.17.5"
-  }
+  },
+  "name": "erc20-factory",
+  "description": "This repository contains an example NodeJS script that demonstrates how to create an InitiaERC20 token on Initia MiniEVM Minitias using the ERC20Factory contract.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "@types/node": "^22.5.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
 }
