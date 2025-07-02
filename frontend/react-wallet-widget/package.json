@@ -12,7 +12,7 @@
     "@cosmjs/proto-signing": "^0.32.4",
     "@initia/initia.js": "^0.2.9",
     "@initia/react-wallet-widget": "^0.136.0",
-    "next": "14.2.5",
+    "next": "14.2.30",
     "react": "^18",
     "react-dom": "^18"
   },
