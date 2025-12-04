@@ -6,10 +6,11 @@ const miniEVM = require('./chain');
 
 require('dotenv').config();
 
-const privateKey = process.env.PRIVATE_KEY?.startsWith('0x') ? process.env.PRIVATE_KEY : `0x${process.env.PRIVATE_KEY}`;
-if (!privateKey) {
+const rawPrivateKey = process.env.PRIVATE_KEY;
+if (!rawPrivateKey) {
   throw new Error('PRIVATE_KEY environment variable is not set.');
 }
+const privateKey = rawPrivateKey.startsWith('0x') ? rawPrivateKey : `0x${rawPrivateKey}`;
 
 const erc20FactoryAddress = process.env.ERC20_FACTORY_ADDRESS;
 if (!erc20FactoryAddress) {
